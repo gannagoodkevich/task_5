@@ -32,8 +32,8 @@ Dudley into his high chair.'
   def perform
     text = ''
     puts('reading file')
-    puts("extracted string: #{text}")
-    histogram = HistogramGenerator.process_string(string: Text)
+    puts("extracted string: #{HARRY_POTTER_PART}")
+    histogram = HistogramGenerator.process_string(string: HARRY_POTTER_PART)
     puts('generated histogram:')
     puts(histogram)
     puts('sorted histogram:')
@@ -83,6 +83,17 @@ Dudley into his high chair.'
   def print_9
     'nine'
   end
+  module_function :perform
+  module_function :number_to_word
+  module_function :print_1
+  module_function :print_2
+  module_function :print_3
+  module_function :print_4
+  module_function :print_5
+  module_function :print_6
+  module_function :print_7
+  module_function :print_8
+  module_function :print_9
 end
 
 puts App.perform
