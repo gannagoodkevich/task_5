@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# rubocop:disable Style/Documentation
 class HistogramGenerator
   def self.process_string(string:)
     if !string.empty?
@@ -88,3 +89,4 @@ puts App.perform
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 13_666].each do |number|
   puts App.number_to_word(number)
 end
+# rubocop:enable Style/Documentation
